@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './styles.module.css';
+import TopSection from '../../Components/TopSection';
 
 function Main() {
     return (
         <>
-        <main className={styles.main}>
+        <TopSection/>
+        {/* <main className={styles.main}>
           <h1 className={styles.title}>
             Welcome to <a href="https://nextjs.org">Next.js!</a>
           </h1>
@@ -43,7 +45,7 @@ function Main() {
               </p>
             </a>
           </div>
-        </main>
+        </main> */}
 
         </>
     )
