@@ -1,19 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-
-function Navigation() {
+function Navigation(props) {
+    console.log(props)
     return (
         <>
-            <nav>
-                
+            <nav {...props}>
+                {props.children}
             </nav>
         </>
     )
-}
-
-Navigation.propTypes = {
-    title: PropTypes.string.isRequired
 }
 
 export default Navigation;

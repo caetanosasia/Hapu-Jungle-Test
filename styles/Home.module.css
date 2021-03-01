@@ -5,7 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: purple;
 }
+
 
 .main {
   padding: 5rem 0;
@@ -112,6 +114,32 @@
 
 .logo {
   height: 1em;
+}
+
+@font-face {
+  font-family: "inter";
+  src: url("../public/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "inter";
+  src: url("../public/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "inter";
+  src: url("../public/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../public/fonts/HelveticaNeueCyr-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../public/fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @media (max-width: 600px) {
