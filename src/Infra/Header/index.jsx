@@ -1,4 +1,4 @@
-import React, { useState, createRef  } from 'react';
+import React, { useState, createRef, useEffect  } from 'react';
 import Navigation from '../Navigation'
 import styles from './styles.module.css';
 import ImageComponent from '../../Components/ImageComponent';
@@ -7,7 +7,6 @@ import Link from 'next/link';
 function Header() {
     const [ mobileNavigationControl, setMobileNavigationControl] = useState(false);
     const navigationElement = createRef();
-    console.log(navigationElement);
 
 
      const openSidebar = () => {
@@ -15,13 +14,20 @@ function Header() {
         navigationElement.current.focus();
     }
 
+    useEffect(()=>{
+        document.documentElement.lang = 'en-us';
+    },[])
+
     return (
         <>
             <header className={styles.header}>
                 <div className={styles.desktop_header}>
                     <div className={styles.link}>
                         <Link href='/'>
+                            <div>
+
                             <ImageComponent src='/hapu.svg' height='64px' alt='Hapu logo' width='48px'/>
+                            </div>
                         </Link>
                     </div>
                     <Navigation className={styles.navigation}>
@@ -33,7 +39,9 @@ function Header() {
                 <div className={styles.mobile_header}>
                     <div className={styles.menu_nav}>
                         <Link href='/'>
-                            <ImageComponent src='/hapu.svg' height='64px' alt='Hapu logo' width='48px'/>
+                            <div>
+                                <ImageComponent src='/hapu.svg' height='64px' alt='Hapu logo' width='48px'/>
+                            </div>
                         </Link>
                         <div>
                             <button onClick={openSidebar} className={styles.hamburguer_button}>

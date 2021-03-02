@@ -11,7 +11,7 @@ function TopSection() {
             <div className={styles.text_container}>
                 <h1>Easily create or join a local nanny share with Hapu</h1>
                 <p>Hapu is Airbnb for nanny share. Share your home, nanny and costs and create new flexible, affordable solutions in childcare.</p>
-                <a className={styles.external_link} target="_blank" href="https://www.youtube.com/">
+                <a rel="noreferrer" className={styles.external_link} target="_blank" href="https://www.youtube.com/">
                   <ImageComponent src='/PlayButton.svg' height='48px' alt='Button to open video in Youtube' width='48px'/>
                   <span>
                     See hapu in action (27 seconds)

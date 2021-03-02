@@ -1,0 +1,39 @@
+.notification{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+    border: 1px solid #DFDFDF;
+    width: 100%;
+    justify-content: center;
+}
+
+.notification a {
+    margin-left: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5E20A4;
+    text-decoration: underline;
+}
+
+.notification span{
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+@media(max-width: 1024px){
+    .notification{
+        flex-direction: column;
+    }
+    .notification span,
+    .notification a {
+        margin-top: 10px;
+    }
+}

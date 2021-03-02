@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './styles.module.css';
 import TopSection from '../../Components/TopSection';
+import NotificationComponent from '../../Components/NotificationComponent';
+import SecondSection from '../../Components/SecondSection';
 
 function Main() {
     return (
         <>
         <TopSection/>
+        <NotificationComponent/>
+        <SecondSection/>
         {/* <main className={styles.main}>
           <h1 className={styles.title}>
             Welcome to <a href="https://nextjs.org">Next.js!</a>
