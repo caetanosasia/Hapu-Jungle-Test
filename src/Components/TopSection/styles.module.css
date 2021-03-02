@@ -43,6 +43,7 @@
 .external_link>span{
     margin-left: 10px;
     width: max-content;
+    text-decoration: underline;
 }
 
 @media(max-width:1324px){
