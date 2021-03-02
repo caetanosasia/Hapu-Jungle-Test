@@ -48,8 +48,10 @@ function ThirdSection() {
                 </section>
                 <div className={styles.custom_form}>
                     <form onSubmit={handleLogin}>
-                        <input className={styles.input_button} type='text' onChange={e => setName(e.target.value)} placeholder="Your name"></input>
-                        <input className={styles.input_button}  type='text' onChange={e => setEmail(e.target.value)} placeholder="Your email"></input>
+                        <label for="name" className={styles.visuallyhidden}>Your name: </label>
+                        <input id="name" className={styles.input_button} type='text' onChange={e => setName(e.target.value)} placeholder="Your name"></input>
+                        <label for="email" className={styles.visuallyhidden}>Your email: </label>
+                        <input id="email" className={styles.input_button}  type='text' onChange={e => setEmail(e.target.value)} placeholder="Your email"></input>
                         <button className={styles.submit_button} type="submit">Send</button>
                     </form>
                     {success !== 'none' ? <div className={styles.alert} role="alert">
