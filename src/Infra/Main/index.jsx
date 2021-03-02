@@ -6,6 +6,7 @@ import SecondSection from '../../Components/SecondSection';
 import ThirdSection from '../../Components/ThirdSection';
 import FourthSection from '../../Components/FourthSection';
 import FifthSection from '../../Components/FifthSection';
+import SixthSection from '../../Components/SixthSection';
 
 function Main() {
     return (
@@ -16,6 +17,7 @@ function Main() {
           <ThirdSection/>
           <FourthSection/>
           <FifthSection/>
+          <SixthSection/>
         </>
     )
 }

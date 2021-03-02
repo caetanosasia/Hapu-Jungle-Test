@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './styles.module.css';
 import ImageComponent from '../ImageComponent';
 
-function SecondSection() {
+function FifthSection() {
    
     return (
         <>
@@ -28,4 +28,4 @@ function SecondSection() {
 
 
 
-export default SecondSection;
+export default FifthSection;

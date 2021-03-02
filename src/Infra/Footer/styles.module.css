@@ -1,18 +1,150 @@
 .footer {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  font-family: 'Inter';
+  padding: 85px 125px 30px 125px;
+}
 
-  .footer img {
-    margin-left: 0.5rem;
-  }
+.copyright_content{
+  margin: 0;
+  color: #3D3D3D;
+  opacity: 0.6;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 90px;
+}
+.copyright_content>p{
+  margin: 0;
+}
+.footer h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
 
-    
-  .footer a {
-    display: flex;
-    justify-content: center;
+  text-align: center;
+  margin: 0;
+
+  color: #3D3D3D;
+}
+
+.logo_content{
+  display: flex;
+  width: 100%;
+}
+.logo_content>div{
+  flex: 1;
+  display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+.medias_logo{
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+.footer_section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 75px;
+}
+
+.button_link {
+  background-color: #5E20A4;
+  color: white;
+  border-radius: 4px;
+  padding: 15px 35px;
+  margin-bottom: 20px;
+}
+.double_label_link{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.double_label_link>p{
+  margin: 0;
+}
+.double_label_link>span{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
+
+.regular_link{
+  color: #5E20A4;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+}
+
+.footer_section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link_container>a{
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+.link_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medias_logo>div{
+  margin-left: 15px;
+}
+
+@media(max-width: 1024px){
+  .link_container{
+    margin-bottom: 30px;
   }
+  .logo_content{
+    flex-direction: column;
+  }
+  .hapu_logo_container{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .link_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .medias_logo,
+  .hapu_logo_container{
+    align-items: center;
+    justify-content: center;
+  }
+  .copyright_content{
+    margin-top: 30px;
+  }
+  .footer_section{
+    margin-bottom: 30px;
+  }
+  .footer {
+    padding: 40px 20px 15px 20px;
+  }
+}

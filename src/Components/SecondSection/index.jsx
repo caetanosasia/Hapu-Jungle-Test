@@ -18,7 +18,7 @@ function SecondSection() {
                     </p>
                     <a className={styles.styled_link} href="/">Ready to get started?</a>
                 </section>
-                <div> <ImageComponent src='/ImageSection1.png' height='392px' alt='User image' width='584px'/></div>
+                <div> <ImageComponent src='/ImageSection1.png' height='392px' alt='Application image' width='584px'/></div>
                 
             </div>
             <div className={styles.styled_line}>
