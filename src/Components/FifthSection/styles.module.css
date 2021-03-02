@@ -1,15 +1,19 @@
-.secondary_section{
+.fifth_section{
     display: flex;
     padding: 110px 50px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.secondary_section section{
-    max-width: 450px;
+.fifth_section section{
+    max-width: 900px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.secondary_section section p{
+.fifth_section section p{
     color: #3D3D3D;
     font-family: Inter;
     font-style: normal;
@@ -18,12 +22,17 @@
     line-height: 28px;
 }
 
-.secondary_section section h1{
+.fifth_section section h1{
     font-family: Inter;
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
     line-height: 32px;
+    margin-top: 0;
+}
+
+.fifth_section>div{
+    margin-right: 30px;
 }
 
 .styled_link{
@@ -45,22 +54,27 @@
 }
 
 @media(max-width: 1024px){
-    .secondary_section{
-        flex-direction: column-reverse;
+    .fifth_section{
+        flex-direction: column;
         align-items: center;
     }
-    .secondary_section section h1,
-    .secondary_section section p{
+    .fifth_section section h1,
+    .fifth_section section p{
         text-align: center;
     }
-    .secondary_section{
+    .fifth_section{
         padding: 65px 20px;
     }
-    .secondary_section section{
+    .fifth_section section{
         align-items: center;
     }
-    .secondary_section section h1{
+    .fifth_section section h1{
         font-size: 22px;
         line-height: 32px;
+        margin-bottom: 0px;
     }
+    .fifth_section>div{
+        display: none;
+    }
+    
 }

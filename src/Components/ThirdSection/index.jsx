@@ -21,7 +21,6 @@ function ThirdSection() {
                         "email": email
                       })
                 }).then((response) => {
-                    console.log(response)
                     if(response.status === 200){
                         setSuccess(true)
                         setAlertMessage('Sent with success!')
@@ -30,16 +29,12 @@ function ThirdSection() {
                     }
                     return response.json();
                 }).then((data) => {
-                    console.log(data)
                     data.email ? setAlertMessage(data.email[0]) : '';
                     data.error ? setAlertMessage(data.error) : '';
                     
                 });
-                
-
         } catch(err) {
             alert('Error to send the data')
-            console.log(err)
         }
     }
 
