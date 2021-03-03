@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
+import ImageComponent from '../ImageComponent';
 
 function ThirdSection() {
     const [ name, setName] = useState('test');
     const [ email, setEmail] = useState('test@');
     const [ success, setSuccess ] = useState('none');
     const [ alertMessage, setAlertMessage] = useState('Sent with success!')
+    const [ loader, setLoader] = useState(false);
    async function handleLogin(e){
         e.preventDefault();
-
+        setLoader(true)
         try { 
               fetch('https://api.jungledevs.com/api/v1/challenge-newsletter/', {
                     method: 'post',
@@ -31,7 +33,7 @@ function ThirdSection() {
                 }).then((data) => {
                     data.email ? setAlertMessage(data.email[0]) : '';
                     data.error ? setAlertMessage(data.error) : '';
-                    
+                    setLoader(false)
                 });
         } catch(err) {
             alert('Error to send the data')
@@ -56,6 +58,9 @@ function ThirdSection() {
                     </form>
                     {success !== 'none' ? <div className={styles.alert} role="alert">
                         {alertMessage}
+                    </div> : ''}
+                    {loader ? <div aria-live="polite" className={styles.loader_}>
+                        <ImageComponent src='/Reload-1s-200px.gif' height='50px' alt='Loader image' width='50px'/>
                     </div> : ''}
                 </div>
             </div>

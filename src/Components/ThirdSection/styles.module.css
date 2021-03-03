@@ -20,6 +20,17 @@
     line-height: 32px;
 }
 
+.loader_{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .third_section>section>p{
     margin: 0;
     font-family: Inter;
@@ -30,6 +41,7 @@
 }
 .custom_form{
     margin-top: 75px;
+    position: relative;
 }
 .input_button{
     height: 48px;
